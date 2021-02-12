@@ -1,5 +1,5 @@
 import { SocialIcon } from 'react-social-icons';
-import Layout from '../components/LayoutC';
+import Layout from '../components/Layout';
 import styles from './styles.module.scss';
 
 const Home = () => (
