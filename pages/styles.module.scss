@@ -1,0 +1,159 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-image: url(/images/Sumatra-bw.jpg);
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-sizing: border-box;
+    padding: 24px 48px;
+    width: 600px;
+    background: hsla(0, 0%, 100%, 0.8);
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    color: #444;
+
+    @media (max-width: 640px) {
+      position: static;
+      margin: 0 12px 42px 12px;
+      padding: 24px 24px;
+      width: calc(100% - 24px);
+      transform: translateY(12px);
+    }
+
+    .profileImage {
+      width: 168px;
+      height: 168px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        border: 2px solid #444;
+      }
+    }
+
+    h1 {
+      margin-top: 36px;
+      font-weight: 500;
+      font-size: 32px;
+    }
+
+    .subtitle {
+      display: flex;
+      margin-top: 6px;
+      text-align: center;
+      font-style: italic;
+      font-size: 11px;
+
+      li {
+        padding: 0 12px;
+        border-right: 1px solid #cacaca;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      @media (max-width: 640px) {
+        flex-direction: column;
+
+        li {
+          padding: 0px;
+          border-right: none;
+        }
+      }
+    }
+
+    .content {
+      padding: 36px 0;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .socialIcons {
+      display: flex;
+
+      li {
+        margin-left: 12px;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+
+        svg {
+          border-radius: 0 !important;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 120px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25));
+
+    > a {
+      display: flex;
+      align-items: center;
+      margin-left: 3rem;
+      padding: 0 12px;
+      height: 100%;
+
+      &:active,
+      &:hover {
+        outline: none;
+
+        > img {
+          filter: contrast(200%);
+        }
+      }
+
+      > img {
+        max-height: 90px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      position: static;
+      justify-content: center;
+    }
+
+    @media (max-width: 414px) {
+      height: 80px;
+
+      > a {
+        > img {
+          max-height: 40px;
+        }
+
+        &:nth-child(2) {
+          > img {
+            max-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

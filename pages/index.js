@@ -1,48 +1,51 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
-import utilStyles from '../styles/utils.module.css'
+import { SocialIcon } from 'react-social-icons';
+import Layout from '../components/Layout';
+import styles from './styles.module.scss';
 
-export default function Home({ allPostsData }) {
-  return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
+const Home = () => (
+  <Layout>
+    <div className={styles.wrapper}>
+
+      <div className={styles.card}>
+        <div className={styles.profileImage}>
+          <img src="/images/me.jpg" alt="Radoslav Popov" />
+        </div>
+
+        <h1>Radoslav Popov</h1>
+
+        <ul className={styles.subtitle}>
+          <li>Front-end Architect</li>
+          <li>Independent Software Engineer</li>
+          <li>Co-founder, Investia.IO</li>
         </ul>
-      </section>
-    </Layout>
-  )
-}
 
-export async function getStaticProps() {
-  console.log('retrieving posts');
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
+        <div className={styles.content}>
+          Bachelor of Informatics, Master of General Psychology,
+          14 years of software engineering experience working in different IT corporations (2007 - 2021),
+          building large-scale applications that last,
+          fond of UX and great products, backpacked S.E. Asia for 4 months at one point in life.
+        </div>
+
+        <ul className={styles.socialIcons}>
+          <li>
+            <SocialIcon url="https://www.linkedin.com/in/radoslav-popov-8092aa3b/" target="_blank" />
+          </li>
+          <li>
+            <SocialIcon url="https://medium.com/@radoslav.popov" target="_blank" />
+          </li>
+        </ul>
+      </div>
+
+      <div className={styles.footer}>
+        <a href="https://investia.io" target="_blank">
+          <img src="/images/investia.png" alt="Investia.IO" />
+        </a>
+        <a href="https://kredy.bg" target="_blank">
+          <img src="/images/kredy.svg" alt="Kredy.bg" />
+        </a>
+      </div>
+    </div>
+  </Layout>
+);
+
+export default Home;
