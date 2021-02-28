@@ -170,8 +170,9 @@
   background-repeat: no-repeat;
 
   .projectCard {
+    box-sizing: border-box;
     margin-top: 20px;
-    height: calc(100% - 40px);
+    height: calc(100% - 24px);
     padding: 4px;
     width: 600px;
     background: hsla(0, 0%, 0%, 0.9);
@@ -183,7 +184,9 @@
     overflow: hidden;
 
     @media (max-width: 640px) {
-      width: calc(100% - 40px);
+      margin-top: 12px;
+      height: calc(100% - 24px);
+      width: calc(100% - 24px);
     }
 
     .imageWrapper {
