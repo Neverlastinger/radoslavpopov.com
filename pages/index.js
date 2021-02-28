@@ -40,7 +40,7 @@ const Home = () => (
         <a href="https://investia.io" target="_blank">
           <img src="/images/investia.png" alt="Investia.IO" />
         </a>
-        <a href="https://kredy.bg" target="_blank">
+        <a href="/k">
           <img src="/images/kredy.svg" alt="Kredy.bg" />
         </a>
       </div>

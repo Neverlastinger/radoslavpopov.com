@@ -157,3 +157,61 @@
     }
   }
 }
+
+.projectPage {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background-image: url(/images/Sumatra-dark.jpg);
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .projectCard {
+    position: absolute;
+    margin-top: 20px;
+    height: calc(100% - 40px);
+    padding: 4px;
+    width: 600px;
+    background: hsla(0, 0%, 0%, 0.9);
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    color: #444;
+    opacity: 0.9;
+    overflow: hidden;
+
+    .imageWrapper {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      overflow: auto;
+
+      .projectImage {
+        width: 100%;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    }
+
+    .infoCard {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 1;
+      padding: 12px 24px;
+      background: hsla(0, 0%, 0%, 0.8);
+      box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
+      backdrop-filter: blur(4px);
+      color: white;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
