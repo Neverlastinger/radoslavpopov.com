@@ -20,7 +20,7 @@ const KredyPage = () => {
       <div className={styles.projectPage}>
         <div className={styles.projectCard}>
           <div className={styles.infoCard}>
-            Currently designing and implementing the Front-End architecture of this upcoming start-up idea.
+            Currently designing and implementing the Front-End architecture of an exciting start-up idea.
           </div>
           <div className={styles.imageWrapper}>
             <Link href="/">

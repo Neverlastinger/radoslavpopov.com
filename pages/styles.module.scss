@@ -170,9 +170,10 @@
   background-repeat: no-repeat;
 
   .projectCard {
+    position: relative;
     box-sizing: border-box;
     margin-top: 20px;
-    height: calc(100% - 24px);
+    height: calc(100% - 40px);
     padding: 4px;
     width: 600px;
     background: hsla(0, 0%, 0%, 0.9);
