@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import { SocialIcon } from 'react-social-icons';
 import Layout from '../components/Layout';
-import styles from './styles.module.scss';
+import styles from './index.module.scss';
 
 const Home = () => (
   <Layout>
@@ -37,12 +38,16 @@ const Home = () => (
       </div>
 
       <div className={styles.footer}>
-        <a href="https://investia.io" target="_blank">
-          <img src="/images/investia.png" alt="Investia.IO" />
-        </a>
-        <a href="/k">
-          <img src="/images/kredy.svg" alt="Kredy.bg" />
-        </a>
+        <Link href="/i">
+          <a href="/i">
+            <img src="/images/investia.png" alt="View Product" />
+          </a>
+        </Link>
+        <Link href="/k">
+          <a href="/k">
+            <img src="/images/kredy.svg" alt="View Product" />
+          </a>
+        </Link>
       </div>
     </div>
   </Layout>
