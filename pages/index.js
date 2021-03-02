@@ -48,6 +48,9 @@ const Home = () => (
             <img src="/images/kredy.svg" alt="View Product" />
           </a>
         </Link>
+        <a href="https://neverlastinger.github.io/2048-react-redux/build/" target="_blank">
+          <img src="/images/2048.png" alt="View 2048" className={styles.game2048} />
+        </a>
       </div>
     </div>
   </Layout>
