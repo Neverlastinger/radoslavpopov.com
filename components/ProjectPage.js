@@ -15,6 +15,12 @@ const ProjectPage = ({ img, text }) => (
           </Link>
         </div>
       </div>
+
+      <Link href="/">
+        <div className={styles.backButton}>
+          <img src="/images/back.svg" alt="Home" />
+        </div>
+      </Link>
     </div>
   </Layout>
 );

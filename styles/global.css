@@ -20,7 +20,7 @@ html, body {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px), (max-height: 700px) {
   html, body {
     overflow: auto;
   }

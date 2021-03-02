@@ -7,7 +7,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @media (max-width: 640px) {
+  @media (max-width: 640px), (max-height: 700px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,7 +29,7 @@
     backdrop-filter: blur(4px);
     color: #444;
 
-    @media (max-width: 640px) {
+    @media (max-width: 640px), (max-height: 700px) {
       position: static;
       margin: 0 12px 42px 12px;
       padding: 24px 24px;
@@ -53,6 +53,7 @@
       margin-top: 36px;
       font-weight: 500;
       font-size: 32px;
+      text-align: center;
     }
 
     .subtitle {
@@ -71,7 +72,7 @@
         }
       }
 
-      @media (max-width: 640px) {
+      @media (max-width: 640px), (max-height: 700px) {
         flex-direction: column;
 
         li {
@@ -135,7 +136,7 @@
       }
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 640px), (max-height: 700px) {
       position: static;
       justify-content: center;
     }

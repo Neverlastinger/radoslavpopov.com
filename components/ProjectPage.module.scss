@@ -11,6 +11,7 @@
 
   .projectCard {
     position: relative;
+    z-index: 2;
     box-sizing: border-box;
     margin-top: 20px;
     height: calc(100% - 40px);
@@ -64,6 +65,35 @@
         font-size: 12px;
         line-height: 20px;
       }
+    }
+  }
+
+  .backButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.25);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+
+    @media (max-width: 766px) {
+      display: none;
+    }
+
+    &:hover,
+    &:active {
+      background-color: hsla(0, 0%, 100%, 0.85);
+    }
+
+    img {
+      transform: rotate(180deg);
     }
   }
 }
