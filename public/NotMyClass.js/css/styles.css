@@ -1,0 +1,98 @@
+article {
+	margin: 80px auto 80px auto;
+	width: 780px;
+	font: 16px/28px Helvetica;
+}
+article p {
+	margin: 24px 0 0 0;
+	color: black;
+}
+article img {
+	margin: 24px auto 0 auto;
+	max-width: 100%;
+}
+article header {
+	margin: 0 0 48px 0;
+}
+article header span {
+	font-size: 12px;
+}
+article h1 {
+	margin: 0 0 12px 0;
+	font-size: 48px;
+	line-height: 66px;
+	color: hsl(195, 100%, 35%);
+}
+article h2 {
+	margin: 60px 0 32px 0;
+	padding-bottom: 6px;
+	font-size: 32px;
+	line-height: 38px;
+	color: hsl(195, 100%, 35%);
+	border-bottom: 1px solid hsl(195, 100%, 35%);
+}
+article h3 {
+	margin: 60px 0 20px 0;
+	font-size: 20px;
+	line-height: 20px;
+	color: hsl(195, 100%, 35%);
+}
+article h4 {
+	margin: 40px 0 0 0;
+	font-size: 16px;
+	line-height: 32px;
+	color: black;
+}
+article blockquote {
+	margin: 0 0 0 30px;
+	padding-left: 30px;
+	border-left: 6px solid hsl(195, 100%, 35%);
+	font-style: italic;
+}
+article blockquote a {
+	font-size: 11px;
+}
+article a {
+	color: hsl(195, 100%, 35%);
+}
+article a:hover {
+	color: hsl(195, 100%, 22%);
+	text-decoration: none;
+}
+
+article code strong {
+	text-decoration: underline;
+	color: red;
+}
+
+q {
+	font-style: italic;
+}
+
+@media (max-width: 820px) {
+	article {
+		box-sizing: border-box;
+		padding: 0 20px;
+		width: 100%;
+		font: 16px/28px Helvetica;
+	}
+	article h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	article h2 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	article h3 {
+		font-size: 16px;
+		line-height: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+	article h1 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
