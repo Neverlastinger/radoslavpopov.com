@@ -17,7 +17,7 @@ const Home = () => (
         <ul className={styles.subtitle}>
           <li>Front-end Architect</li>
           <li>Independent Software Engineer</li>
-          <li>Co-founder, Investia.IO</li>
+          {/* <li>Co-founder, Investia.IO</li> */}
         </ul>
 
         <div className={styles.content}>
