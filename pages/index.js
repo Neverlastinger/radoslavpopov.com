@@ -9,7 +9,7 @@ const Home = () => (
 
       <div className={styles.card}>
         <div className={styles.profileImage}>
-          <img src="/images/me.jpg" alt="Radoslav Popov" />
+          <img src="/images/me.png" alt="Radoslav Popov" />
         </div>
 
         <h1>Radoslav Popov</h1>
