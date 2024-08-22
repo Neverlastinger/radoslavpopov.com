@@ -10,16 +10,16 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "gray-matter": "^4.0.2",
-    "next": "9.5.3",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-social-icons": "^4.1.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-social-icons": "^6.18.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "sass": "^1.27.0"
+    "sass": "^1.77.8"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^7.25.1",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
