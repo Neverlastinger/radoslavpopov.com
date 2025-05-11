@@ -213,6 +213,12 @@ export default function Game() {
           </div>
         </div>
       )}
+
+      <div className={styles.qr}>
+        <a href='/party/qr.png' target='_blank' rel='noopener noreferrer'>
+          [QR]
+        </a>
+      </div>
     </div>
   );
 }

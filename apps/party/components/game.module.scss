@@ -60,4 +60,16 @@
       }
     }
   }
+
+  .qr {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-weight: 600;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
