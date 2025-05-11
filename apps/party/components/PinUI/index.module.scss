@@ -1,0 +1,93 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background-color: #062726;
+  z-index: 2;
+  font-weight: 500;
+  font-size: 18px;
+
+  .pinText {
+    height: 24px;
+  }
+
+  .digits {
+    $digit-size: min(33vw, 20vh, 300px);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: calc(3 * $digit-size);
+
+    > button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: $digit-size;
+      height: $digit-size;
+      font-size: 26px;
+      font-weight: bold;
+      background-color: transparent;
+      border: none;
+      color: #E2CFEA;
+
+      &:active {
+        animation: 0.2s linear 0s normal glow;
+      }
+
+      &[disabled] {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes glow {
+      0% {
+        color: #E2CFEA;
+        text-shadow: 2px 2px 5px #E2CFEA;
+      }
+      50% {
+        color: #6247AA;
+        text-shadow: 0 0 20px #6247AA;
+      }
+      100% {
+        color: #E2CFEA;
+        text-shadow: 2px 2px 5px #E2CFEA;
+      }
+      
+    }
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  &.shake {
+    animation: 0.2s linear 0s 3 shake;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-2px, 0);
+    }
+    50% {
+      transform: translate(2px, 0);
+    }
+    75% {
+      transform: translate(-2px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+    
+  }
+}

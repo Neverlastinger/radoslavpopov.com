@@ -8,23 +8,24 @@
     "start": "next start"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
+    "@radix-ui/react-icons": "^1.3.2",
+    "ably": "^2.9.0",
+    "classnames": "^2.5.1",
+    "next": "15.3.1",
     "gray-matter": "^4.0.2",
-    "next": "^14.2.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-social-icons": "^6.18.0",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "sass": "^1.77.8"
+    "sass": "^1.87.0",
+    "sonner": "^2.0.3",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.25.1",
-    "eslint": "^7.19.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
   }
 }

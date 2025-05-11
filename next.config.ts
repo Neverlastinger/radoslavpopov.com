@@ -1,5 +1,7 @@
-module.exports = {
-  async redirects() {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  redirects: async () => {
     return [
       {
         source: '/NotMyClass.js',
@@ -7,5 +9,7 @@ module.exports = {
         permanent: true,
       },
     ];
-  },
+  }
 };
+
+export default nextConfig;

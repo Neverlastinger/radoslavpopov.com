@@ -1,0 +1,63 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100vw;
+  background-color: #062726;
+  color: #E2CFEA;
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    gap: 16px;
+    height: 100%;
+
+    @media screen and (max-height: 640px) {
+      padding-top: 0;
+    }
+  }
+
+  .inGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      gap: 24px;
+
+      .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .pin {
+          font-weight: 500;
+          font-size: 60px;
+        }
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  }
+}

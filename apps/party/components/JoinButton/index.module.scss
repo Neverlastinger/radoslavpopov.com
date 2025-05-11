@@ -1,0 +1,68 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+$button-width: min(80vw, 80vh, 400px);
+
+.wrapper {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    outline: none;
+  }
+
+  .button {
+    padding: 6px;
+    width: $button-width;
+    height: $button-width;
+    border-radius: $button-width;
+    color: #062726;
+    background-image: linear-gradient(90deg, #102B3F, #A06CD5);
+    box-shadow: 1px 2px 20px 4px #6247AA;
+    animation: 3s linear 0s infinite rotate;
+    z-index: 1;
+  
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border-radius: $button-width;
+      background-color: #6247AA;
+    }
+  }
+
+  &:active {
+    .inner {
+      background-color: #E2CFEA;
+    }
+
+    label {
+      color: #6247AA;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #E2CFEA;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
