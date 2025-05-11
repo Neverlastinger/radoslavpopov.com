@@ -1,3 +1,5 @@
+'use client';
+
 import CountriesPartyApp from "../../apps/party";
 
 export default async function Party() {
