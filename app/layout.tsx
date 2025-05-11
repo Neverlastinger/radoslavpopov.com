@@ -10,6 +10,9 @@ const geistMono = Montserrat({
 export const metadata: Metadata = {
   title: "Radoslav Popov",
   description: "Radoslav Popov ",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
